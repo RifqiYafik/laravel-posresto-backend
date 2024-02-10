@@ -23,4 +23,36 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item dropdown ">
+                <a href="#"
+                    class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Product</span></a>
+                <ul class="dropdown-menu">
+                    <li class='{{ Request::is('dashboard-general-dashboard') ? 'active' : '' }}'>
+                        <a class="nav-link"
+                            href="{{ route('products.index') }}">All Products</a>
+                    </li>
+                </ul>
+                <ul class="dropdown-menu">
+                    <li class=''>
+                        <a class="nav-link"
+                            href="{{ route('users.index') }}">All Users</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown ">
+                <a href="#"
+                    class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Category</span></a>
+                <ul class="dropdown-menu">
+                    <li class='{{ Request::is('dashboard-general-dashboard') ? 'active' : '' }}'>
+                        <a class="nav-link"
+                            href="{{ route('categories.index') }}">All Categories</a>
+                    </li>
+                </ul>
+                <ul class="dropdown-menu">
+                    <li class=''>
+                        <a class="nav-link"
+                            href="{{ route('users.index') }}">All User</a>
+                    </li>
+                </ul>
+            </li>
 </div>
