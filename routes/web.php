@@ -17,7 +17,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('pages.auth.login1');
+    return view('pages.auth.login');
 });
 
 Route::middleware(['auth'])->group(function () {

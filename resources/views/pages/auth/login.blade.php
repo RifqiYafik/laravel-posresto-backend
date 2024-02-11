@@ -42,9 +42,10 @@
                         <p class="text-muted">Before you get started, you must login or register if you don't already
                             have an account.</p>
                         <form method="POST"
-                            action="#"
+                            action="{{route('login')}}"
                             class="needs-validation"
                             novalidate="">
+                            @csrf
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input id="email"
@@ -75,7 +76,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox"
                                         name="remember"
@@ -85,7 +86,7 @@
                                     <label class="custom-control-label"
                                         for="remember-me">Remember Me</label>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <div class="form-group text-right">
                                 <a href="auth-forgot-password.html"
@@ -100,7 +101,7 @@
                             </div>
 
                             <div class="mt-5 text-center">
-                                Don't have an account? <a href="auth-register.html">Create new one</a>
+                                Don't have an account? <a href="{{route('register')}}">Create new one</a>
                             </div>
                         </form>
 
